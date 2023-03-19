@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+   padding: 0 20px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+   margin: 20px 7px;
+   display: inline-flex;
+   flex-direction: column;
+}
+
+/* Clear floats after the columns */
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Style the counter cards */
+.card {
+   box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.3);
+   width: fit-content;
+   /* this adds the "card" effect */
+   padding: 16px;
+   background-color: whitesmoke;
+   border-radius: 10px;
+}
+
+
+
+ .emails{
+   position: absolute;
+   margin-left: 10px;
+   margin-top: 10px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+   .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+   }
+}
